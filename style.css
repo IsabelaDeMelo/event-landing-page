@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+    --background: #000000c0;
+    --pink: #ED1ECB;
+  }
+  
+  * {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ## HEADER ##  */
+
+  header {
+    background-image: url(imgs/hrz-5.jpg);
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+  }
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--background);
+  }
+
+  .header-box {
+    width: 30%;
+    height: 55vh;
+    margin-top: 5rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.7rem;
+  }
+
+  .header-box > h1 {
+    color: var(--pink);
+  }
+
+  .header-box > p {
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 80%;
+  }
+
+  .about-event {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .about-event > span {
+    color: var(--pink);
+    font-weight: 800;
+  }
+
+  /* ## FORM ##  */
+
+  form {
+    background-color: #95989aef;
+    width: 100%;
+    height: 90%;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-box {
+    width: 28%;
+  }
+
+  form > h2 {
+    font-weight: 400;
+    padding-bottom: 2rem;
+  }
+
+  form > section > input, form > section > select {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .form-data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-data > input, select {
+    margin-bottom: 1rem;
+  }
+
+  .form-data > input, select {
+    margin-top: 0.3rem;
+  }
+
+  .form-data > button {
+    background-color: var(--pink);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem;
+    cursor: pointer;
+  }
+
+  .form-data > button:hover {
+    background-color: #e064cc;
+    transition: 0.6s;
+  }
+
+  /* ## MAIN ##  */
+
+  main {
+    height: 385vh;
+  }
+
+  /* ## LEARN SECTION ##  */
+
+  .what-learn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learn-title {
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 2.6rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .learn-box {
+    display: flex;
+    width: 80%;
+    height: 83vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .learn-imgs {
+    margin-top: 2rem;
+  }
+
+  .learn-imgs > p {
+    width: 75%;
+    margin: auto;
+    padding-top: 1rem;
+    color: var(--text-tertiary);
+  }
+
+  .learn-imgs > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 1s;
+  }
+
+  .learn-imgs > img:hover {
+    transform: scale(1.4);
+    transition: 1s;
+  }
+
+  /* ## LOCATION SECTION ##  */
+
+  .location {
+    width: 100%;
+    height: 60vh;
+    background-image: url(imgs/hrz-1.jpg);
+    background-position: center center;
+    background-size: 100%;
+    font-weight: 500;
+  }
+
+  .location-box {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-color);
+  }
+
+  .address {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  i {
+    color: var(--pink);
+    font-size: 4em;
+    margin: auto;
+    position: relative;
+    left: 3em;
+  }
+
+  .about-location {
+    width: 55%;
+    margin: auto;
+    padding-left: 6em;
+  }
+
+  .about-location > h2 {
+    color: var(--pink);
+    text-transform: uppercase;
+    width: 40%;
+    font-size: 2.2em;
+  }
+
+.about-location > p {
+  width: 70%;
+  line-height: 1.5em;
+  margin-top: 3em;
+}
+
+ /* ## DETAILS SECTION ##  */
+
+.details-container {
+  height: 100vh;
+}
+
+.details-box1, .details-box2, .details-box3 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4em;
+}
+
+.details-img {
+  width: 40%;
+}
+
+.details-box1 > h2 {
+  font-size: 3em;
+  width: 35%;
+}
+
+.details-list > h3, .goals > h3 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+
+.details-list > ul > li, .goals > ul > li {
+  margin-bottom: 0.7em;
+}
+
+.details-box3 {
+  margin-right: 15em;
+}
+
+.details-img3 {
+  width: 50%;
+}
+
+ /* ## SUBSCRIVE SECTION ##  */
+
+ .subscrive-box {
+  background-image: url(imgs/hrz-6.jpg);
+  background-position: center center;
+  background-size: 100%;
+  margin-top: 4.5em;
+}
+
+.subscribe {
+  width: 100%;
+  height: 45vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+ }
+
+.subscribe > h3 {
+  color: var(--text-color);
+  font-size: 1.7em;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 3.5em;
+}
+
+.subscribe > button {
+  width: 25%;
+  margin: auto;
+  background-color: var(--pink);
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.7em;
+  margin-bottom: 5.7em;
+}
+
+.subscribe > button:hover {
+  background-color: #e064cc;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+ /* ## FOOTER ##  */
+
+.footer-container {
+  height: 27vh;
+}
+
+.footer-box {
+  height: 20vh;
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
+}
+
+
+
+
